@@ -122,7 +122,7 @@ nayla.sendnew = async (satu, dua, tiga) => {return await generateWAMessage(satu,
 const sendMenu = async (satu, dua, tiga, empat) => {
 var menu1 = await generateWAMessageFromContent(from, {
 "templateMessage": {"hydratedTemplate": {...empat.message,"hydratedContentText": dua,"hydratedFooterText": tiga,"hydratedButtons": [
-{"urlButton": {"displayText": "SOURCE CODE","url": "https://youtube.com/channel/UCeQaKIQQhDNHMOq_odQh5Sw"}},
+{"urlButton": {"displayText": "YOUTUBE OWNER","url": "https://m.youtube.com/channel/UCEDb6SkiPU0theI8J_WEZZA"}},
 {"urlButton": {"displayText": "OWNER","url": "https://wa.me/"+ nomerowner}},
 {"quickReplyButton": {"displayText": "DONASI","id": `${prefix}donasi`}},
 {"quickReplyButton": {"displayText": "MYGRUB","id": `${prefix}mygrub`,}},
@@ -133,7 +133,7 @@ nayla.relayMessage(satu, menu1.message, { messageId: menu1.key.id })
 const sendMenuu = async (satu, dua, tiga, empat) => {
 var menuu1 = await generateWAMessageFromContent(from, {
 "templateMessage": {"hydratedTemplate": {...empat.message,"hydratedContentText": dua,"hydratedFooterText": tiga,"hydratedButtons": [
-{"urlButton": {"displayText": "SOURCE CODE","url": "https://youtube.com/channel/UCeQaKIQQhDNHMOq_odQh5Sw"}},
+{"urlButton": {"displayText": "YOUTUBE OWNER","url": "https://m.youtube.com/channel/UCEDb6SkiPU0theI8J_WEZZA"}},
 {"urlButton": {"displayText": "OWNER","url": "https://wa.me/"+ nomerowner}},
 {"quickReplyButton": {"displayText": "ALLMENU","id": `${prefix}allmenu`}}
 ]}}}, {})
@@ -456,7 +456,7 @@ case 'owner':
 const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n' 
 + `FN:${namaowner}\n`
-+ 'ORG:Ini saya;\n'
++ 'ORG:Ini owner saya;\n'
 + `TEL;type=CELL;type=VOICE;waid=${nomerowner}:+${nomerowner}\n`
 + 'END:VCARD';
 nayla.sendMessage(from, { contacts: { contacts: [{ vcard }] }});
@@ -469,11 +469,7 @@ break
 case 'allhelp':
 case 'allmenu':
 const menu = `⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗
-╭━━━━━━━◢◤━━━━╮
-┃┏┓┏━━┳◢◤┳┓╱╱╱┃
-┃┃┣┫╱╱◢◤╱╱┣━━━┃
-┃┗┛┗━◢◤┻┻┻┛╱╱╱┃
-╰━━━◢◤━━━━━━━━╯
+~ Welcome to Hello Bot
 ⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗
 ~ Heyy ${pushname} 👋
 ⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗⋗
